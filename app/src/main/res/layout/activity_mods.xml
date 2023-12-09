@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_Mods"
+    android:background="@drawable/backgrnd"
+
+    >
+
+    <ImageButton
+        android:id="@+id/easy_mode_Button"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/easypeasy"
+        android:onClick="easy_mode"
+        android:text="Легко"
+        app:icon="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <ImageButton
+        android:id="@+id/standart_mode_Button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/nothingunusual"
+        android:onClick="standart_mode"
+        android:text="стандартно"
+        app:layout_constraintEnd_toEndOf="@+id/easy_mode_Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/easy_mode_Button"
+        app:layout_constraintTop_toBottomOf="@+id/easy_mode_Button" />
+
+    <ImageButton
+        android:id="@+id/hard_mode_Button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/tyazhkovato"
+        android:onClick="hard_mode"
+        android:text="тяжело"
+        app:layout_constraintEnd_toEndOf="@+id/standart_mode_Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/standart_mode_Button"
+        app:layout_constraintTop_toBottomOf="@+id/standart_mode_Button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:fontFamily="@font/century_gothic"
+        android:gravity="center"
+        android:text="Выберите уровень сложности"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/easy_mode_Button"
+        app:layout_constraintEnd_toEndOf="@+id/easy_mode_Button"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/easy_mode_Button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <ImageButton
+        android:id="@+id/button31"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonbstuu"
+        android:onClick="Hardcore_OC"
+        android:text="Бргту на платном"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/hard_mode_Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hard_mode_Button"
+        app:layout_constraintTop_toBottomOf="@+id/hard_mode_Button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

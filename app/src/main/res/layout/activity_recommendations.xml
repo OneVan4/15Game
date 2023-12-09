@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recommendationsActivity"
+    android:background="@drawable/backgrnd"
+    >
+
+    <ScrollView
+        android:layout_width="348dp"
+        android:layout_height="690dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+
+                android:text="Игра в 15 (или Пятнашки) - это головоломка, которая состоит из 15 плиток, расположенных в 4 ряда и 4 столбца. Цель игры - переместить плитки, чтобы они оказались в порядке от 1 до 15 (включая пустую клетку).\n\n  Правила игры в 15 следующие:\n  1)Изначально плитки расположены в случайном порядке.\n  2)Игрок может перемещать плитки, нажимая на них и перетаскивая в пустую клетку.\n  3)Игрок может перемещать плитки только в верхнюю, нижнюю, левую или правую пустую клетку.\n  4)Игрок должен переместить плитки, чтобы они оказались в порядке от 1 до 15, начиная сверху слева и заканчивая нижней правой клеткой, с пустой клеткой в нижнем правом углу.\n  5)Игрок должен перемещать плитки, используя наименьшее количество ходов.\n  6)Игрок может использовать кнопку Перемешать, чтобы перемешать плитки в случайном порядке, если он застрял и не может решить головоломку.\n  7)Игрок выигрывает, когда он переместил все плитки в правильном порядке.\n\n  Игра в 15 может быть сложной, особенно для начинающих игроков, но с практикой и следуя правилам, вы можете стать более опытным игроком.\n\n Вот несколько советов, которые могут помочь вам стать более эффективным игроком:  \n\n1)Начните с угловых костяшек: в первую очередь нужно переместить на свои места угловые костяшки, это даст вам больше свободы для перемещения других костяшек.  \n2)Следите за порядком: попробуйте держать в уме порядок перемещения костяшек. Перемещайте костяшки в правильном порядке, чтобы не заблокировать себя.  \n3)Не бойтесь делать ошибки: не всегда первый путь, который приходит в голову, является самым эффективным. Иногда придется делать несколько ходов, чтобы понять, какое перемещение нужно сделать.  \n4)Используйте ходы возврата: если вы застряли, можно использовать ход возврата, чтобы вернуться на предыдущий шаг и попробовать другой путь.  \n5)Играйте быстро: если вы играете на время, старайтесь играть быстро, чтобы иметь больше шансов победить.  \n6)Помните свои достижения: когда вы решите головоломку, запомните, как вы это сделали, чтобы в следующий раз быстрее решить ее снова.  \n\nНадеемся, что эти советы помогут вам стать более эффективным игроком в 15!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nПриветик:)" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

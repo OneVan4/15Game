@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game_15_activity"
+    android:background="@drawable/backgrnd"
+    >
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:background="@drawable/restarrrt"
+        android:onClick="startAgainActivity"
+        android:text=" Начать снова"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/save_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Game_Field_GV"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <GridView
+
+
+        android:id="@+id/Game_Field_GV"
+        android:layout_width="360dp"
+        android:layout_height="444dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        >
+
+    </GridView>
+
+
+    <ImageButton
+        android:id="@+id/autosolution_butt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/autolightbulbsuperdupercleverandfast"
+        android:text="Авторешение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toEndOf="@+id/save_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Game_Field_GV"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <ImageButton
+        android:id="@+id/undo_button1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/undo"
+        android:onClick="undo_OC"
+        android:text="отмена хода"
+        app:layout_constraintBottom_toTopOf="@+id/Game_Field_GV"
+        app:layout_constraintEnd_toStartOf="@+id/pause_button"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/moves_text_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/moves_text_view"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/century_gothic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Game_Field_GV"
+        app:layout_constraintEnd_toStartOf="@+id/pause_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="115dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/century_gothic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/moves_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/moves_text_view"
+        app:layout_constraintTop_toTopOf="@+id/moves_text_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/pause_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/pause"
+        android:text="Пауза"
+        app:layout_constraintBottom_toTopOf="@+id/Game_Field_GV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <ImageButton
+        android:id="@+id/save_Button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/save"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Game_Field_GV"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="55dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="123dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/Game_Field_GV"
+        app:layout_constraintEnd_toStartOf="@+id/undo_button1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/lastImageView"
+        android:layout_width="290dp"
+        android:layout_height="425dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/andre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
